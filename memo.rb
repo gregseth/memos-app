@@ -5,7 +5,7 @@ class Memo
                                                                                                      
     DefaultPage = 'dev'                                                                              
     AllowedExtensions = { text: 'txt', markdown: 'md' }                                        
-    BaseDir = 'public/memos'                           
+    BaseDir = 'memos'                           
                                                                        
     def initialize(name)   
         # The dev page is the default                                                                          
