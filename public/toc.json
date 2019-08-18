@@ -3,79 +3,79 @@
     "values": [ {
         "link":   "dev",
         "lbl":    "General",
-        "class":  ""
+        "cls":  ""
     } , {
         "link":   "snippets/cpp",
         "lbl":    "C++",
-        "class":  ""
+        "cls":  ""
     } , {
         "link":   "snippets/csharp",
         "lbl":    "C#",
-        "class":  ""
+        "cls":  ""
     } ]
 } , {
     "name":   "Memos",
     "values": [ {
         "link":   "shell-fu",
         "lbl":    "Shell Fu",
-        "class":  "markdown"
+        "cls":  "markdown"
     } , {
         "link":   "sed",
         "lbl":    "Sed",
-        "class":  ""
+        "cls":  ""
     } , {
         "link":   "git",
         "lbl":    "Git",
-        "class":  "markdown"
+        "cls":  "markdown"
     } , {
         "link":   "curl",
         "lbl":    "cURL",
-        "class":  "markdown"
+        "cls":  "markdown"
     } , {
         "link":   "lists/html-entities",
         "lbl":    "HTML entities",
-        "class":  ""
+        "cls":  ""
     } , {
         "link":   "lists/abbr",
         "lbl":    "Acronyms",
-        "class":  ""
+        "cls":  ""
     } , {
         "link":   "excel",
         "lbl":    "Excel",
-        "class":  "markdown"
+        "cls":  "markdown"
     } ]
 } , {
     "name":   "Shortcuts",
     "values": [ {
         "link":   "shortcuts/vs",
         "lbl":    "Visual Studio",
-        "class":  ""
+        "cls":  ""
     } , {
         "link":   "shortcuts/irssi",
         "lbl":    "IRSSI",
-        "class":  ""
+        "cls":  ""
     } , {
         "link":   "shortcuts/vi",
         "lbl":    "Vim",
-        "class":  ""
+        "cls":  ""
     } ]
 } , {
     "name":   "",
     "values": [ {
         "link":   "texts/quotes",
         "lbl":    "Quotes",
-        "class":  "markdown"
+        "cls":  "markdown"
     } , {
         "link":   "tips",
         "lbl":    "Tips",
-        "class":  "markdown"
+        "cls":  "markdown"
     } , {
         "link":   "bépo",
         "lbl":    "Clavier bépo",
-        "class":  "markdown"
+        "cls":  "markdown"
     } , {
         "link":   "samples/ASCII",
         "lbl":    "ASCII",
-        "class":  ""
+        "cls":  ""
     } ]
 } ]
