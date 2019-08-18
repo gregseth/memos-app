@@ -4,7 +4,7 @@ require './memo.rb'
 require './helpers.rb'
 
 get '/' do
-    redirect to '/dev'
+    redirect to Memo::DefaultPage
 end
 
 get %r{/(.+)} do |page|

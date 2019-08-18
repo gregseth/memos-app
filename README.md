@@ -35,9 +35,8 @@ Clone the « memos » repository, edit and push. A GitHub webhook is triggered,
 First follow the same steps than for editing a memo. Then clone this repository and edit the `public/toc.json` file, providing:
 
 -   the category name;
--   the file name (without the extension);
+-   the file name;
 -   the title of the link displayed on the table of contents;
--   the class of the ling, can be `markdown` for a Markdown file or an empty string for a text file.
 
 Example:
 
@@ -45,13 +44,11 @@ Example:
 [ {
     "name":   "Category",
     "values": [ {
-        "link":   "subdir/markdown_file",
+        "link":   "subdir/markdown_file.md",
         "lbl":    "Title 1",
-        "cls":    "markdown"
     }, {
-        "link":   "text_file",
+        "link":   "text_file.txt",
         "lbl":    "Title 2",
-        "cls":    ""
     } ]
 } ]
 ```

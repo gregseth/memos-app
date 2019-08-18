@@ -3,7 +3,7 @@ require 'rdiscount'
 class Memo                                                                                           
     attr_reader :name, :lines                                                                        
                                                                                                      
-    DefaultPage = 'dev'                                                                              
+    DefaultPage = 'dev.txt'                                                                              
     AllowedExtensions = { text: 'txt', markdown: 'md' }                                        
     BaseDir = '../memos'
                                                                        
@@ -13,13 +13,12 @@ class Memo
         # Defaulting to 404
         @lines = %x{figlet -f banner3 -w 80 -c 404}.split("\n")
 
-        AllowedExtensions.each do |type, ext|                                                        
-            test = File.join( BaseDir, @name+'.'+ext)                        
-            if File.exists?(test)                                                                    
-                @path = test                                                                         
-                @lines = File.open(@path, 'r:UTF-8').readlines                                       
-            end                                                                                      
-        end                                                                                          
+        filepath = File.join( BaseDir, @name )                        
+        if File.exists?(filepath)                                                                    
+            @path = filepath                                                                         
+            @name = File.basename(@path, File.extname(@path))
+            @lines = File.open(@path, 'r:UTF-8').readlines                                       
+        end                                                                                      
     end                                                                                              
                                                                                                      
     def exists?                                                                                      

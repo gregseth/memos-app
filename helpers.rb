@@ -5,7 +5,8 @@ helpers do
         name        = cat[:name] 
         separator   = (cat[:name].empty? ? ' ' : ': ') 
         list        = cat[:values].map do |info| 
-            haml '%a{:href => link, :class => cls } #{lbl}', :locals => info
+            info[:cls] = info[:link].end_with?('md') ? 'markdown' : ''
+            haml '%a{href: link, class: cls } #{lbl}', locals: info
         end.join(' | ')
         
         name + separator + list
