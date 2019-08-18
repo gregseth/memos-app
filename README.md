@@ -47,11 +47,11 @@ Example:
     "values": [ {
         "link":   "subdir/markdown_file",
         "lbl":    "Title 1",
-        "class":  "markdown"
+        "cls":    "markdown"
     }, {
         "link":   "text_file",
         "lbl":    "Title 2",
-        "class":  ""
+        "cls":    ""
     } ]
 } ]
 ```
