@@ -1,0 +1,39 @@
+!!!
+%html
+    %head
+        %meta{ 'http-equiv' => 'Content-Type', 'content' => 'text/html; charset=UTF-8' }
+        %title Memo :: #{ @file.name } 
+
+        %base{ href: '/' }
+        %link{ rel: 'shortcut icon', href: 'favicon.ico' }
+        %link{ rel: 'stylesheet', href: 'css/default.css', media: 'screen' }
+
+    %body
+        #body
+            %h1 #{ @file.name }
+
+            %aside#abstract.box><
+                File           : 
+                - if @file.exists?
+                    %span> #{ @file.path }
+                - else
+                    %span.err> File not found
+                %br>
+                Last update    : #{ @file.last_modified || '-' }
+                %br>
+                Author         :  
+                %a{ href: "mailto:gregseth+memogmail.com" }>< greg.seth@gmail.com
+
+            #page
+                %ol.box
+                    - @file.lines.each do |line| 
+                        %li= format_line line
+                - unless @file.markdown.nil?
+                    -# the tilde here is to preserve whitepsaces
+                    %article#markdown.box~ @file.markdown
+
+        %nav#toc
+            - @toc.each do |cat|
+                = format_category cat
+                %br
+

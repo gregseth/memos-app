@@ -1,0 +1,81 @@
+[ {
+    "name":   "Dev",
+    "values": [ {
+        "link":   "dev",
+        "lbl":    "General",
+        "class":  ""
+    } , {
+        "link":   "snippets/cpp",
+        "lbl":    "C++",
+        "class":  ""
+    } , {
+        "link":   "snippets/csharp",
+        "lbl":    "C#",
+        "class":  ""
+    } ]
+} , {
+    "name":   "Memos",
+    "values": [ {
+        "link":   "shell-fu",
+        "lbl":    "Shell Fu",
+        "class":  "markdown"
+    } , {
+        "link":   "sed",
+        "lbl":    "Sed",
+        "class":  ""
+    } , {
+        "link":   "git",
+        "lbl":    "Git",
+        "class":  "markdown"
+    } , {
+        "link":   "curl",
+        "lbl":    "cURL",
+        "class":  "markdown"
+    } , {
+        "link":   "lists/html-entities",
+        "lbl":    "HTML entities",
+        "class":  ""
+    } , {
+        "link":   "lists/abbr",
+        "lbl":    "Acronyms",
+        "class":  ""
+    } , {
+        "link":   "excel",
+        "lbl":    "Excel",
+        "class":  "markdown"
+    } ]
+} , {
+    "name":   "Shortcuts",
+    "values": [ {
+        "link":   "shortcuts/vs",
+        "lbl":    "Visual Studio",
+        "class":  ""
+    } , {
+        "link":   "shortcuts/irssi",
+        "lbl":    "IRSSI",
+        "class":  ""
+    } , {
+        "link":   "shortcuts/vi",
+        "lbl":    "Vim",
+        "class":  ""
+    } ]
+} , {
+    "name":   "",
+    "values": [ {
+        "link":   "texts/quotes",
+        "lbl":    "Quotes",
+        "class":  "markdown"
+    } , {
+        "link":   "tips",
+        "lbl":    "Tips",
+        "class":  "markdown"
+    } , {
+        "link":   "bépo",
+        "lbl":    "Clavier bépo",
+        "class":  "markdown"
+    } , {
+        "link":   "samples/ASCII",
+        "lbl":    "ASCII",
+        "class":  ""
+    } ]
+} ]

@@ -1,0 +1,319 @@
+
+html, body {
+    height:100%;
+}
+
+body
+{
+	margin: 0;
+	padding:0;
+	font-family:'Century Gothic', Helvetica, Arial, sans-serif;
+	font-size:12px;
+	text-align: center;
+}
+
+.box {
+	box-shadow: -3px 3px 40px #CCC;
+	text-align: left;
+	border-top: solid 4px #333;
+	border-bottom: solid 4px #333;
+	margin:5px;
+}
+
+#body {
+    min-height:100%;
+    margin-bottom:-10em;
+}
+
+#body > h1
+{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:250px;/*162px;
+	/*max-height:162px;*/
+	overflow:hidden;
+	margin:-40px 0 0;
+	padding:0;
+	text-align:right;
+	/*text-shadow: 0 0 50px #999;*/
+	text-shadow: -1px 1px 0 #989898,
+                 -2px 2px 0 #909090,
+                 -3px 3px 0 #888888,
+                 -4px 4px 0 #808080,
+                 -5px 5px 0 #787878,
+                 -6px 6px 1px rgba(0,0,0,.20),
+                 0 0 5px rgba(0,0,0,.20),
+                 -1px 1px 3px rgba(0,0,0,.4),
+                 -3px 3px 10px rgba(0,0,0,.38),
+                 -10px 5px 10px rgba(0,0,0,.35),
+                 -20px 10px 20px rgba(0,0,0,.3),
+                 -40px 20px 40px rgba(0,0,0,.2);
+
+	font-family:'OCR A Extended', 'OCR A Std', 'Courrier New', monospace;
+	font-size:16em;
+	font-weight:bold;
+	letter-spacing: -.15em;
+	color:#FFF;
+	z-index:-1;
+	white-space: nowrap;
+	-webkit-opacity: .2;
+	-moz-opacity: .2;
+	opacity: .2;
+}
+ol
+{
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px auto;
+	padding: 0 0 0 52px;
+	background:#E0E0E0;
+}
+
+#page {
+	margin:0;
+	padding:12em 10px;
+	/*
+	border-top: dashed #333 1px;
+	border-bottom: dashed #333 1px;
+	background:#DDD;
+
+	-webkit-box-shadow: 0 0 100px #CCC;
+	-moz-box-shadow: 0 0 100px #CCC;
+	box-shadow: 0 0 100px #CCC;
+	*/
+}
+
+li
+{
+	width:482px;
+	margin:0;
+	padding:0 20px;
+	background:#FFF;
+	color:#333;
+	white-space:pre-wrap;
+	font-family:Monaco, "Courier New", Courier, monospace;
+	font-size:10px;
+}
+
+li:first-child
+{
+	padding-top:1em;
+}
+
+li:last-child
+{
+	padding-bottom:1em;
+}
+
+li:nth-child(even)
+{
+	background:#EEE;
+}
+
+#abstract
+{
+	position:absolute;
+	top:0;
+	width:auto;
+	margin: 24px 24px 24px 32px;
+	-webkit-box-shadow: -3px 3px 40px #CCC;
+	-moz-box-shadow: -3px 3px 40px #CCC;
+	box-shadow: -3px 3px 40px #CCC;
+	border-top: solid 4px #333;
+	border-bottom: solid 4px #333;
+	padding:1.4em 4em;
+	background: rgba(255,255,255,.7);
+	white-space: pre;
+	font-family:Monaco, "Courier New", Courier, monospace;
+	font-size:10px;
+	text-align: left;
+	z-index:1;
+}
+
+kbd {
+    border:solid 1px #999;
+    border-radius:3px;
+    padding:0 2px;
+    box-shadow:0 -1px 2px #CCC inset;
+    font-size:.9em;
+}
+.err
+{
+	color:#F00;
+}
+
+a:before, a:after
+{
+	content:'_';
+}
+
+a
+{
+	color:#666;
+}
+
+a:hover
+{
+	text-decoration:none;
+}
+
+form
+{
+	text-align:center;
+}
+
+input[type=text]
+{
+	width:250px;
+}
+
+
+#toc
+{
+	text-align:center;
+	font-family:Monaco, "Courier New", Courier, monospace;
+	font-size:10px;
+	color:#999;
+/*    text-shadow: 1px 1px 1px #000;*/
+	background: #333;
+	margin: 0;
+	padding: 2em 0;
+	line-height: 2em;
+    width:100%;
+    height:8em
+/*	box-shadow: 0 0 15px #000 inset ;*/
+}
+
+#toc .markdown:after {
+	content: ' (md)';
+	font-weight: bold;
+	font-family: 'Helvetica', sans-serif;
+	vertical-align: super;
+    font-size: .7em;
+}
+#toc .markdown:before {
+    content: '';
+}
+
+#toc a {
+	color: #CCC;
+	text-decoration: none;
+}
+
+#toc a:hover {
+/*    text-shadow: 0 0 5px #666, 1px 1px 1px #000;*/
+}
+
+/* **** reset CSS **** */
+#markdown, #markdown li {
+	width:auto;
+	max-width: auto;
+	font-family:'Century Gothic', Helvetica, Arial, sans-serif;
+	font-size:12px;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	line-height: normal;
+	white-space: normal;
+	text-align: left;
+}
+
+#markdown a:before, #markdown a:after
+{
+	content:'';
+}
+/* **** End reset **** */
+
+#markdown {
+	display: inline-block;
+	vertical-align: top;
+	width: auto;/*524px;*/
+	max-width:532px;
+	padding:12px 20px;
+	background: #FFF;
+	margin:20px 0 0 -20px;
+}
+
+#markdown code {
+	font-family:Monaco, "Courier New", Courier, monospace;
+	font-size:10px;
+}
+
+#markdown pre {
+    overflow-x:auto;
+}
+
+#markdown h1 {
+	margin: 0 0 1.5em 0;
+	font-size: 1.7em;
+	text-align: right;
+}
+
+#markdown h2 {
+	font-size: 1.3em;
+}
+
+#markdown h3 {
+	font-size: 1.2em;
+}
+
+#markdown p {
+	text-align: justify;
+	text-indent: 1.5em;
+}
+
+#markdown ol, ul {
+    background: none;
+}
+
+#markdown li p {
+	text-indent: 0;
+}
+
+#markdown pre {
+	border-top: solid 1px #666;
+	border-bottom: solid 1px #666;
+	padding: 1em;
+	box-shadow: 0 0 8px #D0D0D0 inset;
+	background: #F7F7F7;
+	border-radius: 3px;
+}
+
+#markdown blockquote {
+	box-shadow: inset 0 0 8px #CCC;
+	padding: 1em;
+	border-radius: 6px;
+}
+
+#markdown hr {
+	border:none;
+	border-top: solid 1px;
+	background: #333;
+	box-shadow: 0 0 8px #999;
+	width: 30%;
+}
+
+#markdown table {
+    margin: 2em auto;
+    border: solid 1px #333;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#markdown table td, #markdown table th {
+    border: solid 1px #333;
+    padding: 0 1em;
+}
+
+#markdown a {
+	color:#666;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#markdown a:hover {
+	color:#333;
+	text-shadow: 0 0 5px #CCC;
+}
