@@ -6,7 +6,7 @@ GEM
       tilt
     htmlentities (4.3.4)
     mustermann (1.0.3)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-protection (2.0.5)
       rack
     rdiscount (2.2.0.1)
