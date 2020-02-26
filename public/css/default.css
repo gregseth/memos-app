@@ -87,14 +87,13 @@ ol
 
 li
 {
-	width:482px;
+	width:calc(82ex + 40px);
 	margin:0;
 	padding:0 20px;
 	background:#FFF;
 	color:#333;
 	white-space:pre-wrap;
 	font-family:Monaco, "Courier New", Courier, monospace;
-	font-size:10px;
 }
 
 li:first-child
@@ -211,7 +210,7 @@ input[type=text]
 	width:auto;
 	max-width: auto;
 	font-family:'Century Gothic', Helvetica, Arial, sans-serif;
-	font-size:12px;
+	font-size:14px;
 	margin: 0;
 	padding: 0;
 	background: transparent;
