@@ -25,6 +25,9 @@
         "link":   "curl.md",
         "lbl":    "cURL"
     } , {
+        "link":   "unicode.md",
+        "link":   "Unicode"
+    } , {
         "link":   "lists/html-entities.txt",
         "lbl":    "HTML entities"
     } , {
